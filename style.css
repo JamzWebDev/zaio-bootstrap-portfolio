@@ -1,59 +1,40 @@
-/*
- * Globals
- */
 
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
-/*
- * Base structure
- */
-
-body {
-
-}
-
-
-
-
-/*
- * Header
- */
-
- .banner-wrap {
+.banner-wrap {
+  /* feel free to use your own img  */
   background-image: url(./assets/bg\ web\ dev.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   z-index: 1;
-  
-  
 }
-
 .overlay {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background: black;
+  opacity: 50%;
   position: absolute;
   top: 0;
-  opacity: 50%; 
 }
 
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
-  border-bottom: .25rem solid transparent;
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -63,4 +44,15 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+header {
+  background: black;
+  opacity: 80%;
+}
+
+.scrolling {
+  background: black;
+  opacity: 80%;
+  transition: all 0.5s;
 }
